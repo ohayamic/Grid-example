@@ -1,0 +1,208 @@
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0px auto;
+
+    /* allows one to display elements in grid form */
+    display: grid;
+
+    /* this gives the number of columns that we expect */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* this gives the number of rows that we expect */
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    
+}
+
+.first{
+    background: rgb(222, 222, 238);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+  }
+
+  .second{
+    background: rgb(142, 142, 197);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+  }
+
+  .third{
+      background: rgb(212, 219, 109);
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      /* changes the width and height from default */
+      width:80%;
+      height: 120px;
+      padding: 10px;
+      margin:auto;
+      border-radius: 20px;
+      /* pushes the element on top  */
+      z-index: 1;
+
+      /* making this div a Grid div even though it is on a Grid div*/
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-content: center;
+  }
+  .fourth{
+    background: rgb(154, 155, 149);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    
+}
+
+.fifth{
+    background: rgb(115, 189, 194);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+@media all and (max-width: 850px) and (min-width:701px) {
+    .container{
+        width: 80%;
+        height: 100vh;
+        margin: 0px auto;
+    
+        /* allows one to display elements in grid form */
+        display: grid;
+    
+        /* this gives the number of columns that we expect */
+        grid-template-columns: repeat(4, 1fr);
+    
+        /* this gives the number of rows that we expect */
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 5px;
+        
+    }
+    
+      .second{
+        background: rgb(142, 142, 197);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+      }
+    
+      .third{
+          background: rgb(212, 219, 109);
+          grid-column-start: 1;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 4;
+    
+          /* changes the width and height from default */
+          width:90%;
+          height: 120px;
+          padding: 10px;
+          margin:auto;
+          border-radius: 20px;
+    
+          /* pushes the element on top  */
+          z-index: 1;
+
+          /* making this div a Grid div even though it is on a Grid div*/
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-content: center;
+      }
+      .fourth{
+        background: rgb(154, 155, 149);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+    }
+    
+    .fifth{
+        background: rgb(115, 189, 194);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width:700px) {
+    .container{
+        width: 80%;
+        height: 100vh;
+        margin: 0px auto;
+    
+        /* allows one to display elements in grid form */
+        display: grid;
+    
+        /* this gives the number of columns that we expect */
+        grid-template-columns: repeat(4, 1fr);
+    
+        /* this gives the number of rows that we expect */
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 5px;
+        
+    }
+    
+      .second{
+        background: rgb(142, 142, 197);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+      }
+    
+      .third{
+          background: rgb(212, 219, 109);
+          grid-column-start: 1;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 4;
+    
+          /* changes the width and height from default */
+          width:80%;
+          height: 250px;
+          padding: 10px;
+          margin:auto;
+          border-radius: 20px;
+    
+          /* pushes the element on top  */
+          z-index: 1;
+
+          /* making this div a Grid div even though it is on a Grid div*/
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-content: center;
+      }
+      .fourth{
+        background: rgb(154, 155, 149);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        
+    }
+    
+    .fifth{
+        background: rgb(115, 189, 194);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+}
+
